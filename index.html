@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js"></script>
+</head>
+
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Title Slide -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <h3>Technical Consultant Presentation</h3>
+      <p>Email: <strong>22f3000879@ds.study.iitm.ac.in</strong></p>
+      <aside class="notes">Introduce yourself and give stakeholders a quick overview of the agenda.</aside>
+    </section>
+
+    <!-- Markdown Slide -->
+    <section data-markdown>
+      <textarea data-template>
+# Key Financial Highlights
+- Revenue Growth: **12%**
+- Net Profit Increase: **8%**
+- Operating Margin: **17%**
+
+---
+### Outlook
+Positive forecast for next quarter based on market trends.
+      </textarea>
+      <aside class="notes">Summarize numbers—keep the focus on trends rather than exact values.</aside>
+    </section>
+
+    <!-- Fragment Animation Slide -->
+    <section>
+      <h2>Revenue Breakdown</h2>
+      <ul>
+        <li class="fragment">Retail Banking: $4.1B</li>
+        <li class="fragment">Investment Banking: $2.7B</li>
+        <li class="fragment">Wealth Management: $1.3B</li>
+      </ul>
+      <aside class="notes">Use fragments to highlight each business segment individually.</aside>
+    </section>
+
+    <!-- Code Highlighting Slide -->
+    <section>
+      <h2>Data Processing Pipeline</h2>
+      <pre><code class="language-python">
+import pandas as pd
+
+def calculate_growth(df):
+    df['growth'] = (df['current'] - df['previous']) / df['previous']
+    return df
+
+print("Pipeline Ready")
+      </code></pre>
+      <aside class="notes">Explain how automated processing ensures accuracy in financial reporting.</aside>
+    </section>
+
+    <!-- MathJax Slide -->
+    <section>
+      <h2>Financial Formula</h2>
+      <p>Return on Investment (ROI):</p>
+      <p>$$ ROI = \frac{Net\ Profit}{Cost\ of\ Investment} \times 100 $$</p>
+
+      <p>Compound Annual Growth Rate (CAGR):</p>
+      <p>$$ CAGR = \left(\frac{V_f}{V_i}\right)^{\frac{1}{n}} - 1 $$</p>
+
+      <aside class="notes">Reassure stakeholders that standard financial formulas are used for consistency.</aside>
+    </section>
+
+  </div>
+</div>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+  });
+</script>
+</body>
+</html>
